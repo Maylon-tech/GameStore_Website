@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+:root {
+    --main-color: #fa5353;
+    --dark-color: #1b182b;
+    --light-color: #322f40;
+    --text-color: hsl(0,0%,91%);
+    /* second color choice:
+    --main-color: #0d81ec; */
+}
+
+/* Pseudo element. para selecionar Text */
+::selection {
+    color: var(--text-color);
+    background: var(--main-color);
+}
