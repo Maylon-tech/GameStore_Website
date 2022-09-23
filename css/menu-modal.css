@@ -52,4 +52,35 @@
     height: 350px;
     border-radius: 0.5rem;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    clip-path: circle(0% at 100% 0%);
+}
+
+.notification.active {
+    clip-path: circle(144% at 100% 0%);
+    transition: .4s ease;
+}
+
+.notification-box {
+    display: flex;
+    align-items: baseline;
+    column-gap: 1rem;
+    border-radius: 0.5rem;
+    background: var(--dark-color);
+    padding: 10px;
+}
+.notification-box:hover {
+    border: 2px solid var(--main-color);
+}
+.notification-box .bx {
+    color: #faf102;
+}
+
+.box-color {
+    background: hsl(0, 0%, 100%, 0.4);
+}
+.box-color .bx {
+    color: var(--main-color);
 }
